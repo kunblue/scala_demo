@@ -5,9 +5,12 @@ package com {
       def percentOf(value: Double, rate: Double) = value * rate / 100
     }
 
-    package impatient {
+    package impatient.people {
 
-      class Employee {
+      class Employee extends Person {
+
+        override def toString: String = super.toString + "[salary=" + salary + "]"
+
         def getRaise(rate: scala.Double): Unit = {
           scalary += Utils.percentOf(scalary, rate)
         }
