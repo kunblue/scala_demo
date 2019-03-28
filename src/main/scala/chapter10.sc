@@ -1,3 +1,5 @@
+import com.lankun.demo
+
 trait Logger {
   def log(msg: String)
 
@@ -14,14 +16,14 @@ trait Logger {
   }
 }
 
-class AccountLogger extends Logger {
+class AccountLogger extends demo.Logger {
   override def log(msg: String): Unit = {
     println(msg)
   }
 }
 
 
-class ConsoleLogger extends Logger with Cloneable with Serializable {
+class ConsoleLogger extends demo.Logger with Cloneable with Serializable {
   def log(msg: String): Unit = {
     println(msg)
   }
