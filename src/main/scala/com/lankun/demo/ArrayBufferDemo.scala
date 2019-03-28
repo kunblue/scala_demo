@@ -2,7 +2,7 @@ package com.lankun.demo
 
 import scala.collection.mutable.ArrayBuffer
 
-object arrayBufferDemo {
+object ArrayBufferDemo {
 
   val b = ArrayBuffer[Int]()
 
